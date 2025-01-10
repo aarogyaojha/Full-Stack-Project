@@ -1,13 +1,13 @@
 package main
 
 import (
-	routes "Full-Stack-Project/routes"
+	routes "github.com/aarogyaojha/Full-Stack-Project/routes"
 	"os"
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
-	routes.SetupRoutes()
+
 	port:=os.Getenv("PORT")
 
 	if port == "" {
